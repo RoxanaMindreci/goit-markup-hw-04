@@ -284,11 +284,11 @@ h3 {
 }
 
 .our-team-container .our-team-list {
+    gap: 30px;
     padding: 0;
     align-content: center;
-    display: flex; 
-    justify-content: space-between;  
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin-top: 0;
     margin-bottom: 0;
@@ -301,7 +301,7 @@ h3 {
 }
 .our-team-item {
     background-color: var(--background-white-color);
-    flex-basis: calc((100%-90px) / 4);
+    flex-basis: calc((100%-120px) / 4);
     display: block;
     padding: 0;
 }
