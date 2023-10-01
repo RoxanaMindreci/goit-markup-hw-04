@@ -478,7 +478,8 @@ address {
     padding-bottom: 20px;
 } 
 .social-footer-images {
-    display: block;  
+    display: block;
+    width: 25%;  
 }  
 .social-footer {
     display: inline-block;
