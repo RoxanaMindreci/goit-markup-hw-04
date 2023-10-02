@@ -52,7 +52,8 @@ img {
 }
 .global-header {
     background-color: var(--background-white-color);
-    width: 80%;
+    justify-content: center;
+    align-items: center;
     display: flex;
     margin: 0 auto;
     padding-top: 32px;
@@ -195,7 +196,6 @@ h2 {
     font-size: 36px;
     text-align: center;
     margin: 0 auto;
-    padding-bottom: 50px;
 }
 h3 {
     font-family: inherit;
@@ -210,17 +210,20 @@ h3 {
     background-color: var(--background-white-color);
     padding-bottom: 94px;
     padding-top: 94px;
+    display: flex;
+    justify-content: center;
 }
 .what-we-do-container {
-    max-width: 80%;
-    margin: 0 auto;    
+    display: flex; 
+    justify-content: center;   
+    align-items: center;
 }
 .what-we-do-container .what-we-do-list {
     display: flex;
     flex-wrap: nowrap;
     gap: 30px;
     padding: 0;
-    margin: 0 auto;
+    justify-content: center;
 }
 .what-we-do-container .what-we-do-list .what-we-do {
     flex-basis: calc((100%-120px)/4);
@@ -256,12 +259,13 @@ h3 {
     padding-bottom: 94px;
 }
 .images-container {
-    width: 80%;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
 }
 .images-container .images-list {
     display: flex;
-    flex-wrap:calc((100%-60px)/3);
     gap: 30px;
     padding-left: 0;
     margin: 0;
@@ -275,33 +279,28 @@ h3 {
 .our-team-section {
     background-color: var(--background-light-grey-color);
     max-width: 100%;
+    padding-top: 94px;
 }
 .our-team-container {
     background-color: var(--background-light-grey-color); 
-    max-width: 80%;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 94px;
+    padding-top: 50px;
 }
 
 .our-team-container .our-team-list {
     gap: 30px;
     padding: 0;
-    align-items: center;
     display: flex;
-    flex-basis: calc((100%-80px) / 4);
+    align-items: center;
     padding: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-.our-team-container h2{
-    padding-top: 94px;
-    padding-bottom: 50px;
     margin-top: 0;
     margin-bottom: 0;
 }
 .our-team-item {
     background-color: var(--background-white-color);
-    flex-basis: calc((100%-90px) / 4);
     display: block;
     padding: 0;
 }
@@ -360,15 +359,14 @@ h3 {
 .regular-costumers-section {
     width: 100%;
     background-color: var(--background-white-color);
+    padding-top: 94px;
 }
 .regular-costumers-section .regular-costumers-container {
-    width: 80%;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 94px;
-}
-.regular-costumers-section .regular-costumers-container h2 {
-    padding-top: 94px;
-    padding-bottom: 50px;
+    padding-top: 50px;
 }
 .regular-costumers-section .regular-costumers-container .regular-costumers-list {
     display: flex;
@@ -413,18 +411,18 @@ h3 {
     padding-bottom: 60px;
 }
 .global-footer-container {
-    max-width: 80%;
     display: flex;
-    margin: 0 auto;
+    justify-content:center;
+    align-items: center;
 }
 .global-footer .global-footer-contact {
-   display: block;
-   width: 20%;
-   margin-right: 70px;
+   display: flex;
+   width: 25%;
+   flex-direction: column;
+   justify-content: flex-start;
 }
 .logo-footer-container {
-    display: block;
-    
+    display: flex;
 }
 .global-footer  .logo-footer {
     color: var(--background-white-color);
@@ -433,7 +431,7 @@ h3 {
     font-size: 26px;
     text-decoration: none;
     line-height: 30.52px;
-    display: block;
+    display: flex;
 }
 .global-footer .logo-footer .logo-footer-web {
     color: var(--blue-color);
@@ -466,7 +464,7 @@ address {
 }
 .social-footer-container {
     display: block;
-    width: 30%;
+    width: 50%;
 }
 .social-footer-container .social-title {
     color: var(--background-white-color);
@@ -507,24 +505,33 @@ address {
     justify-content: center;
     align-items: center;
 }
+.portofolio-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .portofolio-section {
-    max-width: 100%;
     background-color: var(--background-white-color);
     padding-top: 94px;
-    padding-bottom: 94px;   
+    padding-bottom: 94px; 
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
 }
 .portofolio-section .portofolio-container {
-    max-width: 80%;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .filter {
     width: 516px;
     padding-bottom: 50px;
     border-radius: 4px;
     padding-left: 0;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 8px;
 
 }
@@ -557,9 +564,7 @@ address {
     box-shadow: none;
 }
 .filter-list .filter-card {
-    width: 100%;
     display: block;
-    flex-basis: calc((100% - 90px) / 3);
     border: 1px;
     border-radius: 1px;
 }
@@ -573,12 +578,9 @@ address {
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 .filter-card-footer {
-    width: 100%;
-    flex-basis: calc((100% - 90px) / 3);
     border-right: 1px solid #EEEEEE;
     border-left : 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
-    margin: 0;
     padding: 20px 24px 20px 24px ;
     line-height: 30px;
 }
@@ -591,6 +593,8 @@ address {
 .filter-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
     gap: 30px;
     padding: 0;
 }
